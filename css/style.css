@@ -109,7 +109,7 @@ header .read-more:hover
 #different-section .different-container .content1
 {
     box-sizing:             content-box;
-    background:             var(--accent-color);
+    background:             var(--secondary-color);
     border-radius:          10px;
     width:                  100px;
     height:                 100px;
@@ -123,7 +123,6 @@ header .read-more:hover
     border-radius:          10px;
     padding:                10px;
     height:                 100px;
-    overflow-y:             scroll;
 }
 
 
