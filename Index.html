@@ -19,10 +19,41 @@
 
     <link rel="icon" type="image/png" href="img/ich.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <script src="index.js" defer></script>
 </head>
 
 <body>
+
+    <nav>
+        <a class="logo" href="#">Portfolio</a>
+        <input type="checkbox" id="toggle_button">
+        <!-- <label for="toggle_button" class="hamburger">&#9776;</label> -->
+        <!-- <label for="toggle_button" class="cross">&times;</label>     -->
+        <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="expandable_li">
+                <input type="checkbox" id="products_checkbox">
+                <label for="products_checkbox" class="expandable_li">Projekte</label>
+                <ul class="dropdown">
+                    <li><a href="#">Pomodoro Uhr</a></li>
+                    <li><a href="#">Schere Stein Papier</a></li>
+                    <li><a href="#">Taschenrechner</a></li>
+                    <li><a href="#">Bilder-Karussell</a></li>
+                    <li><a href="#">Memory Kartenspiel</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+
     <header>
         <div class="container">
             <h1>Michael Klauß</h1>
@@ -36,61 +67,26 @@
         </div>
     </header>
 
-    <section id="different-section">
-        <h2>mal was anderes</h2>
-        <div class="different-container">
-            <div class="content1"></div>
-            <div class="content2">Lorem ipsum dolor sit amet</div>
-        </div>
-
-        <div class="different-container">
-            <div class="content1"></div>
-            <div class="content2">Lorem ipsum dolor sit amet</div>
-        </div>
-
-        <div class="different-container">
-            <div class="content1"></div>
-            <div class="content2">Lorem ipsum dolor sit amet</div>
-        </div>
-
-        <div class="different-container">
-            <div class="content1"></div>
-            <div class="content2">Lorem ipsum dolor sit amet</div>
-        </div>
-
-
-    </section>
-
-    <section id="differente-section">
-        <h2>mal was anderes</h2>
-        <div class="container">
-            <div class="content"></div>
-            <div class="content"></div>
-            <div class="content"></div>
-            <div class="content"></div>
-        </div>
-    </section>
-
     <section id="skill-section">
         <h2>Selbsteinschätzung</h2>
         <div class="wrapper">
             <div class="skill-container">
                 <h3>Front-End</h3>
-                    <ul>
-                        <li>HTML5 <progress max="100" value="85"></progress> </li>
-                        <li>CSS3  <progress max="100" value="80"></progress> </li>
-                        <li>Clean Code <progress max="100" value="75"></progress> </li>
-                        <li>Responsive Design <progress max="100" value="75"></progress> </li>
-                    </ul>
+                <ul>
+                    <li>HTML5 <progress max="100" value="85"></progress> </li>
+                    <li>CSS3  <progress max="100" value="80"></progress> </li>
+                    <li>Clean Code <progress max="100" value="75"></progress> </li>
+                    <li>Responsive Design <progress max="100" value="75"></progress> </li>
+                </ul>
             </div>
             <div class="skill-container">
                 <h3>Back-End</h3>
-                    <ul>
-                        <li>Java <progress max="100" value="85"></progress> </li>
-                        <li>C/C++ <progress max="100" value="65"></progress> </li>
-                        <li>SQL <progress max="100" value="70"></progress> </li>
-                        <li>Linux <progress max="100" value="60"></progress> </li>
-                    </ul>
+                <ul>
+                    <li>Java <progress max="100" value="85"></progress> </li>
+                    <li>C/C++ <progress max="100" value="65"></progress> </li>
+                    <li>SQL <progress max="100" value="70"></progress> </li>
+                    <li>Linux <progress max="100" value="60"></progress> </li>
+                </ul>
             </div>
 
         </div>
@@ -111,7 +107,7 @@
                         auf Performance, Zugänglichkeit und Benutzerfreundlichkeit gelegt.
                         Die Website verwendet CSS-Grid und Flexbox für das Layout und CSS-Variablen
                         für ein konsistentes Farbschema.</p>
-                    <a href="https://github.com/Pechkocher" target=”_blank" class="project-link">Zum Projekt</a>
+                    <a href="https://github.com/Pechkocher/mein-portfolio" target=”_blank" class="project-link">Zum Projekt</a>
                 </div>
             </details>
 
@@ -125,9 +121,9 @@
                         Fähigkeiten und Projekte zu präsentieren. Das Design ist modern,
                         minimalistisch und vollständig responsive. Besondere Aufmerksamkeit wurde
                         auf Performance, Zugänglichkeit und Benutzerfreundlichkeit gelegt.
-                        Die Website verwendet CSS-Grid und Flexbox für das Layout und CSS-Variablen
+                        Die Liste verwendet CSS-Grid und Flexbox für das Layout und CSS-Variablen
                         für ein konsistentes Farbschema.</p>
-                    <a href="https://github.com/michaelklauss/portfolio" target=”_blank" class="project-link">Zum
+                    <a href="https://github.com/Pechkocher" target=”_blank" class="project-link">Zum
                         Projekt</a>
                 </div>
             </details>
@@ -152,7 +148,58 @@
         </div>
     </section>
 
+    <section class="testimonials" id="testimonials">
 
+        <h2>Testimonials</h2>
+
+        <div class="testimonials-container">
+
+            <div class="testimonials-wrapper">
+                <div class="testimonial-item">
+                    <img class="testimonial-img" src="img/bx-user.svg" alt="Bild von Susi">
+                    <span class="testimonial-name">Susi</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis commodi nam ratione.
+                        Cum cupiditate delectus est laboriosam, quos voluptate!</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img class="testimonial-img" src="img/bx-user.svg" alt="Bild von Manfred">
+                    <span class="testimonial-name">Manfred</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis commodi nam ratione.
+                        Cum cupiditate delectus est laboriosam, quos voluptate!</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img class="testimonial-img" src="img/bx-user.svg" alt="Bild von Jason">
+                    <span class="testimonial-name">Jason</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis commodi nam ratione.
+                        Cum cupiditate delectus est laboriosam, quos voluptate!</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img class="testimonial-img" src="img/bx-user.svg" alt="Bild von Susi">
+                    <span class="testimonial-name">Yarin</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis commodi nam ratione.
+                        Cum cupiditate delectus est laboriosam, quos voluptate!</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="differente-section">
+        <h2>mal was anderes</h2>
+        <div class="container">
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+            <div class="content"></div>
+        </div>
+    </section>
 
     <footer>
         <div class="grid-container">
@@ -162,6 +209,12 @@
                 <h3>Kontakt</h3>
                 <a href="mailto:michael.klauss@gmx.net">michael.klauss@gmx.net</a>
             </div>
+
+            <div>
+                <h3>Git-Hub</h3>
+                <a href="https://github.com/Pechkocher" target=”_blank">Pechkocher</a>
+            </div>
+
             <div>
                 <h3>Standort</h3>
                 <a href="https://www.google.com/maps/place/Berlin" target=”_blank”>Berlin, Germany</a>
